@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Dictionary</string>
+    <string name="add_title">添加单词</string>
+    <string name="en_hint">Engling Word</string>
+    <string name="cn_hint">中文意思</string>
+    <string name="add_button">确定</string>
 </resources>
