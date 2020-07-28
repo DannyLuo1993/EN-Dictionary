@@ -12,20 +12,16 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    private FloatingActionButton floatingActionButton;
-    private RecyclerView recyclerView;
-    private RecyclerViewAdapter recyclerViewAdapter;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         //初始化页面控件
-        floatingActionButton = findViewById(R.id.floatingActionButton);
-        recyclerView = findViewById(R.id.recyclerview);
+        FloatingActionButton floatingActionButton = findViewById(R.id.floatingActionButton);
+        RecyclerView recyclerView = findViewById(R.id.recyclerview);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerViewAdapter = new RecyclerViewAdapter();
+        RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter();
         recyclerView.setAdapter(recyclerViewAdapter);
 
         //Button监听事件

@@ -12,8 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
 
 
-    public RecyclerViewAdapter() {
-    }
+
 
     //创建ItemView（页面的View管理器）
     public static class MyViewHolder extends RecyclerView.ViewHolder {
