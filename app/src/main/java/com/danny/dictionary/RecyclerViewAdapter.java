@@ -7,10 +7,18 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.lifecycle.LiveData;
 import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.List;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
 
+    private LiveData<List<Word>> wordListLive;
+
+    public RecyclerViewAdapter(LiveData<List<Word>> wordListLive) {
+        this.wordListLive = wordListLive;
+    }
 
 
 
